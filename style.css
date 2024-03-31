@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F4EDCC;
+    
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 150px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:50px ;
+    box-shadow: 0 0 30px rebeccapurple ;
+   
+
+
+}
+
+h2{
+    color: rgb(6, 26, 61);
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+h2 img{
+    width: 40px;
+    position: absolute;
+    right: 0;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 3px groove black;
+    outline-offset: 5px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px ;
+    box-shadow: 0 0 10px gray ;
+
+}
+
+input{
+    flex: 1;
+    border: none ;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.91px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color:#5F5D9C;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background:#A4CE95 ;
+    color: rgb(58, 3, 87);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 1px;
+}
+
+
+
+ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.92px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block:10px
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius:50% ;
+    background: url(images/unchecked.png);
+    background-size: cover;
+    position: center ;
+    top:12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    background-color:#3700a4;
+    color: white;
+    border-radius: 50px;
+
+}
+
+ul li.checked::before{
+    background: url(images/checked.png);
+    background-size:cover ;
+}
+
+ul li span{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size:22px ;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+ul li span:hover{
+    background-color: #5F5D9C;
+}
